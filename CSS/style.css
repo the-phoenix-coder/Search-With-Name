@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.container > * {
+    width: 100%;
+}
+.container .search {
+    padding: .7rem 0 .7rem .3rem;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    outline: none;
+    font-size: 1.4rem;
+}
+.container .sug li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem;
+    background-color: #f2f2f2;
+}
+.container .sug li:not(:last-child) {
+    border-bottom: 1px solid #A2A2A2;
+}
+.container li span.city {
+    font-size: .8rem;
+}
+.container li span.people {
+    font-size: .8rem;
+    color: rgb(172, 169, 169);
+}
+.container li span.hl {
+    background-color: rgb(214, 131, 7);
+    color: white;
+    padding: .5rem;
+    border-radius: .2rem;
+}
